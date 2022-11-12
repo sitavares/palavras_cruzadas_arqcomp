@@ -1,0 +1,24 @@
+input{
+    width: 15px;
+    height: 15px;
+    text-align: center;
+}
+
+.principal{
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.palavras{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+}
+
+.nao_usa{
+    background-color: black;
+    cursor: default;
+}
