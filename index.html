@@ -389,10 +389,39 @@
             <input type="text" class="nao_usa" disabled="">
             <input type="text" class="nao_usa" disabled="">
         </div>
+        <div><button onclick="confirmar()">Confirmar</button></div>
     </div>
 </body>
 </html>
 
 <script>
-    
+var flash_palavra = ["f","l","a","s","h"]
+var flash = [];
+    function confirmar() {
+        flash = [];
+        var flash_correto = false;
+        flash.push(f_flash.value);
+        flash.push(l_flash.value);
+        flash.push(a_flash_ram.value);
+        flash.push(s_databus_flash.value);
+        flash.push(h_flash.value);
+
+        // esse for percorre e compara o vetores
+        for (let contador = 0; contador < flash_palavra.length; contador++) {
+            
+            if (flash[contador] == flash_palavra[contador]) {
+                flash_correto = true;
+            } else {
+                // se ele achar uma letra que não está correta ele define e variavel flash_correto como falsa e fala que o contador é o tamanho do vetor para que o for pare e deixe a variável como falsa
+                flash_correto = false;
+                contador = flash_palavra.length;
+            }
+        }
+
+        if (flash_correto == true) {
+            alert(`Você acertou!`);
+        } else {
+            alert(`Você errou!`);
+        }
+    }
 </script>
