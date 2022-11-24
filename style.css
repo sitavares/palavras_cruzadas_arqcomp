@@ -5,11 +5,12 @@ input{
 }
 
 .principal{
-    background-color: aqua;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 30px;
 }
 
 .palavras{
@@ -21,4 +22,40 @@ input{
 .nao_usa{
     background-color: black;
     cursor: default;
+}
+
+.dicas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+th{
+    background-color: #010823;
+    color: white;
+}
+
+td{
+    background-color: #8181D7;
+}
+
+table{
+    font-size: 20px;
+}
+
+.botao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    margin-bottom: 30px;
+}
+
+.botao button{
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    background-color: #010823;
+    height: 100%;
+    width: 15%;
 }
